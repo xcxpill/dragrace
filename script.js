@@ -1,118 +1,228 @@
 // ----------------- DATA -----------------
 
-// NOTE: image URLs are placeholders. Replace with real promo URLs if you want.
+// franchise: "US", "UK", "CA"
+// image URLs are placeholders. Swap them for real promos whenever you like.
 const ALL_QUEENS = [
+  // US
   {
     id: "bianca",
     name: "Bianca Del Rio",
-    season: "S6",
+    season: "US S6",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Bianca",
     stats: { performance: 10, runway: 8, comedy: 10, lipsync: 8 }
   },
   {
     id: "jinkx",
     name: "Jinkx Monsoon",
-    season: "S5",
+    season: "US S5",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Jinkx",
     stats: { performance: 10, runway: 7, comedy: 10, lipsync: 8 }
   },
   {
     id: "sasha",
     name: "Sasha Velour",
-    season: "S9",
+    season: "US S9",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Sasha",
     stats: { performance: 9, runway: 9, comedy: 8, lipsync: 10 }
   },
   {
     id: "trixie",
     name: "Trixie Mattel",
-    season: "S7 / AS3",
+    season: "US S7 / AS3",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Trixie",
     stats: { performance: 8, runway: 8, comedy: 9, lipsync: 7 }
   },
   {
     id: "katya",
     name: "Katya",
-    season: "S7 / AS2",
+    season: "US S7 / AS2",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Katya",
     stats: { performance: 8, runway: 7, comedy: 9, lipsync: 8 }
   },
   {
     id: "alaska",
     name: "Alaska",
-    season: "S5 / AS2",
+    season: "US S5 / AS2",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Alaska",
     stats: { performance: 9, runway: 9, comedy: 9, lipsync: 8 }
   },
   {
     id: "trinity",
     name: "Trinity the Tuck",
-    season: "S9 / AS4",
+    season: "US S9 / AS4",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Trinity",
     stats: { performance: 9, runway: 10, comedy: 8, lipsync: 9 }
   },
   {
     id: "monet",
     name: "Monét X Change",
-    season: "S10 / AS4",
+    season: "US S10 / AS4",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Monet",
     stats: { performance: 8, runway: 7, comedy: 9, lipsync: 9 }
   },
   {
     id: "bob",
     name: "Bob the Drag Queen",
-    season: "S8",
+    season: "US S8",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Bob",
     stats: { performance: 10, runway: 7, comedy: 10, lipsync: 9 }
   },
   {
     id: "violet",
     name: "Violet Chachki",
-    season: "S7",
+    season: "US S7",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Violet",
     stats: { performance: 8, runway: 10, comedy: 7, lipsync: 7 }
   },
   {
     id: "peppermint",
     name: "Peppermint",
-    season: "S9",
+    season: "US S9",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Peppermint",
     stats: { performance: 8, runway: 7, comedy: 7, lipsync: 10 }
   },
   {
     id: "shangela",
     name: "Shangela",
-    season: "S2 / S3 / AS3",
+    season: "US S2 / S3 / AS3",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Shangela",
     stats: { performance: 9, runway: 8, comedy: 8, lipsync: 9 }
   },
   {
     id: "latrice",
     name: "Latrice Royale",
-    season: "S4 / AS1 / AS4",
+    season: "US S4 / AS1 / AS4",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Latrice",
     stats: { performance: 8, runway: 7, comedy: 9, lipsync: 8 }
   },
   {
     id: "alyssa",
     name: "Alyssa Edwards",
-    season: "S5 / AS2",
+    season: "US S5 / AS2",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Alyssa",
     stats: { performance: 9, runway: 7, comedy: 8, lipsync: 10 }
   },
   {
     id: "raja",
     name: "Raja",
-    season: "S3 / AS7",
+    season: "US S3 / AS7",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Raja",
     stats: { performance: 9, runway: 10, comedy: 7, lipsync: 7 }
   },
   {
     id: "yvie",
     name: "Yvie Oddly",
-    season: "S11 / AS7",
+    season: "US S11 / AS7",
+    franchise: "US",
     image: "https://via.placeholder.com/200x260?text=Yvie",
     stats: { performance: 9, runway: 8, comedy: 8, lipsync: 9 }
+  },
+
+  // UK
+  {
+    id: "vivienne",
+    name: "The Vivienne",
+    season: "UK S1",
+    franchise: "UK",
+    image: "https://via.placeholder.com/200x260?text=Vivienne",
+    stats: { performance: 9, runway: 8, comedy: 9, lipsync: 8 }
+  },
+  {
+    id: "bimini",
+    name: "Bimini Bon Boulash",
+    season: "UK S2",
+    franchise: "UK",
+    image: "https://via.placeholder.com/200x260?text=Bimini",
+    stats: { performance: 9, runway: 9, comedy: 9, lipsync: 8 }
+  },
+  {
+    id: "lawrence",
+    name: "Lawrence Chaney",
+    season: "UK S2",
+    franchise: "UK",
+    image: "https://via.placeholder.com/200x260?text=Lawrence",
+    stats: { performance: 9, runway: 7, comedy: 10, lipsync: 7 }
+  },
+  {
+    id: "tayce",
+    name: "Tayce",
+    season: "UK S2",
+    franchise: "UK",
+    image: "https://via.placeholder.com/200x260?text=Tayce",
+    stats: { performance: 8, runway: 8, comedy: 7, lipsync: 10 }
+  },
+  {
+    id: "divina",
+    name: "Divina De Campo",
+    season: "UK S1",
+    franchise: "UK",
+    image: "https://via.placeholder.com/200x260?text=Divina",
+    stats: { performance: 9, runway: 8, comedy: 9, lipsync: 8 }
+  },
+  {
+    id: "cheryl",
+    name: "Cheryl Hole",
+    season: "UK S1",
+    franchise: "UK",
+    image: "https://via.placeholder.com/200x260?text=Cheryl",
+    stats: { performance: 8, runway: 7, comedy: 8, lipsync: 8 }
+  },
+
+  // Canada
+  {
+    id: "priyanka",
+    name: "Priyanka",
+    season: "Canada S1",
+    franchise: "CA",
+    image: "https://via.placeholder.com/200x260?text=Priyanka",
+    stats: { performance: 9, runway: 8, comedy: 8, lipsync: 9 }
+  },
+  {
+    id: "icesis",
+    name: "Icesis Couture",
+    season: "Canada S2",
+    franchise: "CA",
+    image: "https://via.placeholder.com/200x260?text=Icesis",
+    stats: { performance: 9, runway: 9, comedy: 8, lipsync: 9 }
+  },
+  {
+    id: "rita",
+    name: "Rita Baga",
+    season: "Canada S1 / CDRVS",
+    franchise: "CA",
+    image: "https://via.placeholder.com/200x260?text=Rita",
+    stats: { performance: 8, runway: 8, comedy: 9, lipsync: 7 }
+  },
+  {
+    id: "kendall",
+    name: "Kendall Gender",
+    season: "Canada S2",
+    franchise: "CA",
+    image: "https://via.placeholder.com/200x260?text=Kendall",
+    stats: { performance: 8, runway: 7, comedy: 8, lipsync: 8 }
+  },
+  {
+    id: "jimbo",
+    name: "Jimbo",
+    season: "Canada S1 / AS8",
+    franchise: "CA",
+    image: "https://via.placeholder.com/200x260?text=Jimbo",
+    stats: { performance: 9, runway: 9, comedy: 10, lipsync: 6 }
   }
 ];
 
@@ -147,6 +257,8 @@ const DRAMA_EVENTS_RIVALRY = [
 // ----------------- STATE & HELPERS -----------------
 
 let selectedQueenIds = new Set();
+let seasonScreens = [];
+let currentScreenIndex = 0;
 
 function $(id) {
   return document.getElementById(id);
@@ -240,15 +352,23 @@ function toggleQueenSelection(id) {
   renderQueenList();
 }
 
-// ----------------- PRESETS -----------------
+// ----------------- PRESETS / FRANCHISE -----------------
 
 function applyPreset(preset) {
   selectedQueenIds.clear();
 
-  if (preset === "classic") {
-    ["bianca", "jinkx", "bob", "shangela", "katya", "violet", "alyssa", "peppermint"].forEach(id => selectedQueenIds.add(id));
-  } else if (preset === "allstars") {
-    ["alaska", "trinity", "monet", "trixie", "raja", "yvie", "shangela", "latrice"].forEach(id => selectedQueenIds.add(id));
+  if (preset === "us_legends") {
+    ALL_QUEENS.filter(q => q.franchise === "US")
+      .forEach(q => selectedQueenIds.add(q.id));
+  } else if (preset === "uk_icons") {
+    ALL_QUEENS.filter(q => q.franchise === "UK")
+      .forEach(q => selectedQueenIds.add(q.id));
+  } else if (preset === "canada_icons") {
+    ALL_QUEENS.filter(q => q.franchise === "CA")
+      .forEach(q => selectedQueenIds.add(q.id));
+  } else if (preset === "global_mix") {
+    const mixed = shuffle(ALL_QUEENS).slice(0, 12);
+    mixed.forEach(q => selectedQueenIds.add(q.id));
   } else if (preset === "random12") {
     const shuffled = shuffle(ALL_QUEENS);
     shuffled.slice(0, 12).forEach(q => selectedQueenIds.add(q.id));
@@ -257,24 +377,51 @@ function applyPreset(preset) {
   renderQueenList();
 }
 
-// ----------------- SIMULATION LOGIC -----------------
+// ----------------- EPISODIC RENDER -----------------
 
-function simulateSeason() {
+function renderCurrentScreen() {
   const logEl = $("log");
+  const counterEl = $("episode-counter");
+  const prevBtn = $("prev-episode");
+  const nextBtn = $("next-episode");
+
   logEl.innerHTML = "";
 
-  const chaosLevel = Number($("chaos").value); // 0–3
+  if (!seasonScreens.length) {
+    logEl.innerHTML = "<p>Click “Simulate Season” to generate a new season.</p>";
+    if (counterEl) counterEl.textContent = "0 / 0";
+    if (prevBtn) prevBtn.disabled = true;
+    if (nextBtn) nextBtn.disabled = true;
+    return;
+  }
+
+  const html = seasonScreens[currentScreenIndex];
+  logEl.innerHTML = html;
+
+  if (counterEl) {
+    counterEl.textContent = `${currentScreenIndex + 1} / ${seasonScreens.length}`;
+  }
+  if (prevBtn) prevBtn.disabled = currentScreenIndex === 0;
+  if (nextBtn) nextBtn.disabled = currentScreenIndex === seasonScreens.length - 1;
+}
+
+// ----------------- MAIN SIMULATION -----------------
+
+function simulateSeason() {
+  const chaosLevel = Number($("chaos").value);
   const rawEpisodeCount = Number($("episode-count").value) || 8;
   const seasonNameInput = $("season-name").value.trim();
   const seasonName = seasonNameInput || "Untitled Fantasy Season";
-  const format = $("format").value; // "regular" | "allstars" | "goldenbeaver"
+  const format = $("format").value;
+  const franchiseFocus = $("franchise").value;
 
   const cast = ALL_QUEENS.filter(q => selectedQueenIds.has(q.id));
+  seasonScreens = [];
+  currentScreenIndex = 0;
+
   if (cast.length < 4) {
-    const warn = document.createElement("div");
-    warn.className = "log-block";
-    warn.innerHTML = "<p>You need at least 4 queens selected to run a season.</p>";
-    logEl.appendChild(warn);
+    seasonScreens.push(`<div class="log-block"><p>You need at least 4 queens selected to run a season.</p></div>`);
+    renderCurrentScreen();
     return;
   }
 
@@ -292,16 +439,6 @@ function simulateSeason() {
 
   // Rivalries
   const rivalries = createRivalries(queens);
-  // Golden Beaver holder (for that format)
-  let goldenBeaverHolder = null;
-
-  // Season header
-  const header = document.createElement("div");
-  header.className = "log-block season-header";
-
-  const rivalsText = rivalries.length
-    ? rivalries.map(r => `${r.a.name} vs ${r.b.name}`).join(" · ")
-    : "None yet… but just wait.";
 
   const formatLabel = format === "regular"
     ? "Regular Season"
@@ -309,14 +446,30 @@ function simulateSeason() {
       ? "All Stars (Top 2 Legacy)"
       : "Golden Beaver (Canada-style All Stars)";
 
-  header.innerHTML = `
+  const franchiseLabel = franchiseFocus === "us"
+    ? "US"
+    : franchiseFocus === "uk"
+      ? "UK"
+      : franchiseFocus === "ca"
+        ? "Canada"
+        : "Mixed";
+
+  const rivalsText = rivalries.length
+    ? rivalries.map(r => `${r.a.name} vs ${r.b.name}`).join(" · ")
+    : "None yet… but just wait.";
+
+  // Season header screen
+  const headerBlock = document.createElement("div");
+  headerBlock.className = "log-block season-header";
+  headerBlock.innerHTML = `
     <h3>${seasonName}</h3>
+    <p><strong>Franchise Focus:</strong> ${franchiseLabel}</p>
     <p><strong>Format:</strong> ${formatLabel}</p>
     <p><strong>Cast:</strong> ${queens.map(q => q.name).join(", ")}</p>
     <p><strong>Rivalries:</strong> ${rivalsText}</p>
     <p><strong>Chaos level:</strong> ${chaosLevel}</p>
   `;
-  logEl.appendChild(header);
+  seasonScreens.push(headerBlock.outerHTML);
 
   let episodeNumber = 1;
 
@@ -327,7 +480,6 @@ function simulateSeason() {
     const challenge = sample(CHALLENGES);
     const living = aliveQueens();
 
-    // Score queens
     const scored = living.map(q => ({
       queen: q,
       score: challengeScore(q, challenge.weights, chaosLevel)
@@ -338,7 +490,6 @@ function simulateSeason() {
     const top2 = scored.slice(0, Math.min(2, scored.length)).map(s => s.queen);
     const bottomGroup = scored.slice(-Math.min(3, scored.length)).map(s => s.queen);
 
-    // Placements depend on format
     let winner = topQueen;
     let high = [];
     let low = [];
@@ -349,7 +500,6 @@ function simulateSeason() {
     let twistStory = "";
 
     if (format === "regular") {
-      // Classic: top winner, bottom 2 lip sync
       winner = topQueen;
       high = scored.slice(1, Math.min(3, scored.length - 2)).map(s => s.queen);
 
@@ -383,22 +533,19 @@ function simulateSeason() {
         eliminated.track.push("ELIM");
       }
     } else {
-      // ALL STARS / GOLDEN BEAVER FORMAT
+      // All Stars / Golden Beaver (legacy format)
       const bottomCandidates = bottomGroup;
 
-      // Track record codes
       top2.forEach(q => q.track.push("TOP2"));
       const notTop = living.filter(q => !top2.includes(q) && !bottomCandidates.includes(q));
       notTop.forEach(q => q.track.push("SAFE"));
       bottomCandidates.forEach(q => q.track.push("BTM"));
 
-      // Golden Beaver twist: top scoring queen gets a beaver this week
       let savedByBeaver = null;
       let beaverHolderThisWeek = null;
 
       if (format === "goldenbeaver") {
         beaverHolderThisWeek = topQueen;
-        goldenBeaverHolder = topQueen; // store for log
         const bottomNonRivals = bottomCandidates.filter(b =>
           !topQueen.rivals.includes(b.id)
         );
@@ -406,35 +553,31 @@ function simulateSeason() {
 
         if (possibleSaves.length > 1 && Math.random() < (0.5 + chaosLevel * 0.1)) {
           savedByBeaver = sample(possibleSaves);
-          // Remove from elimination pool
         }
       }
 
       let eliminationPool = bottomCandidates.slice();
       if (savedByBeaver) {
         eliminationPool = eliminationPool.filter(q => q !== savedByBeaver);
-        twistStory = `${beaverHolderThisWeek.name} uses the Golden Beaver to save ${savedByBeaver.name from elimination}.`;
+        twistStory = `${beaverHolderThisWeek.name} uses the Golden Beaver to save ${savedByBeaver.name} from elimination.`;
       }
 
-      // Lip sync for legacy: between top 2 only
       const legacy = lipsyncForLegacy(top2, chaosLevel);
       const lsWinner = legacy.winner;
       lipsyncStory = legacy.story;
 
-      // If no one left in elim pool (everyone saved) – gag, no elimination
       if (!eliminationPool.length || Math.random() < (0.1 + chaosLevel * 0.05)) {
         eliminated = null;
         twistStory = twistStory
           ? twistStory + " Double shantay! No one leaves."
           : "Double shantay! The lipstick stays in the pocket.";
       } else {
-        // LS winner sends someone home from eliminationPool
         eliminated = chooseElimination(lsWinner, eliminationPool, scored, chaosLevel, rivalries);
         eliminated.eliminated = true;
         eliminated.track.push("ELIM");
       }
 
-      winner = lsWinner; // treat LS winner as "episode winner" for titles
+      winner = lsWinner;
       bottom2 = eliminationPool.slice(0, 2);
       low = bottomCandidates.filter(q => !bottom2.includes(q) && q !== savedByBeaver);
       safe = living.filter(
@@ -483,11 +626,11 @@ function simulateSeason() {
       </p>
     `;
 
-    logEl.appendChild(epiBlock);
+    seasonScreens.push(epiBlock.outerHTML);
     episodeNumber++;
   }
 
-  // Finale
+  // Finale screen
   if (aliveQueens().length <= 3) {
     const finaleBlock = document.createElement("div");
     finaleBlock.className = "log-block";
@@ -510,41 +653,34 @@ function simulateSeason() {
       <p><strong>Winner:</strong> ${winner.name} 👑</p>
       <div class="log-row" style="margin-top:4px;">
         ${finaleResults
-          .map(
-            r =>
-              `<span class="badge">${r.queen.name}: ${r.score.toFixed(2)}</span>`
-          )
+          .map(r => `<span class="badge">${r.queen.name}: ${r.score.toFixed(2)}</span>`)
           .join("")}
       </div>
     `;
-
-    logEl.appendChild(finaleBlock);
+    seasonScreens.push(finaleBlock.outerHTML);
   }
 
-  // Track records summary (paragraphs)
+  // Track summary screen
   const summary = document.createElement("div");
   summary.className = "log-block";
   const rows = queens
-    .map(
-      q =>
-        `<p><strong>${q.name}:</strong> ${q.track.join(" · ")}</p>`
-    )
+    .map(q => `<p><strong>${q.name}:</strong> ${q.track.join(" · ")}</p>`)
     .join("");
   summary.innerHTML = `
     <h3>Track Records (Summary)</h3>
     ${rows}
   `;
-  logEl.appendChild(summary);
+  seasonScreens.push(summary.outerHTML);
 
-  // Track record table (matrix)
+  // Track table screen
   const tableBlock = document.createElement("div");
   tableBlock.className = "log-block";
   tableBlock.innerHTML = `<h3>Track Record Table</h3>`;
   const table = buildTrackRecordTable(queens);
   tableBlock.appendChild(table);
-  logEl.appendChild(tableBlock);
+  seasonScreens.push(tableBlock.outerHTML);
 
-  logEl.scrollTop = logEl.scrollHeight;
+  renderCurrentScreen();
 }
 
 // ----------- EPISODE UTILS -----------
@@ -627,15 +763,12 @@ function chooseElimination(lsWinner, eliminationPool, scored, chaosLevel, rivalr
 
   let candidates = eliminationPool.slice();
 
-  // Sometimes they'll target their rival
   if (candidates.some(isRival) && Math.random() < (0.4 + chaosLevel * 0.1)) {
     candidates = candidates.filter(isRival);
   } else {
-    // Otherwise, lean towards worst score
     candidates.sort((a, b) => (poolScores.get(a.id) || 0) - (poolScores.get(b.id) || 0));
   }
 
-  // Add extra chaos
   if (Math.random() < chaosLevel * 0.15) {
     return sample(eliminationPool);
   }
@@ -748,14 +881,36 @@ function buildTrackRecordTable(queens) {
 // ----------------- INIT -----------------
 
 function init() {
-  applyPreset("classic");
+  applyPreset("us_legends");
+  renderCurrentScreen();
 
   $("cast-preset").addEventListener("change", (e) => {
     applyPreset(e.target.value);
   });
 
+  $("franchise").addEventListener("change", (e) => {
+    const val = e.target.value;
+    if (val === "us") applyPreset("us_legends");
+    else if (val === "uk") applyPreset("uk_icons");
+    else if (val === "ca") applyPreset("canada_icons");
+    else applyPreset("global_mix");
+  });
+
   $("simulate-btn").addEventListener("click", simulateSeason);
+
+  $("prev-episode").addEventListener("click", () => {
+    if (currentScreenIndex > 0) {
+      currentScreenIndex--;
+      renderCurrentScreen();
+    }
+  });
+
+  $("next-episode").addEventListener("click", () => {
+    if (currentScreenIndex < seasonScreens.length - 1) {
+      currentScreenIndex++;
+      renderCurrentScreen();
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", init);
-
