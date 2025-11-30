@@ -1,24 +1,119 @@
-
 // ----------------- DATA -----------------
 
-// Some RuPaul's Drag Race queens with rough, fun stats.
+// NOTE: image URLs are placeholders. Replace with real promo URLs if you want.
 const ALL_QUEENS = [
-  { id: "bianca", name: "Bianca Del Rio", season: "S6", stats: { performance: 10, runway: 8, comedy: 10, lipsync: 8 } },
-  { id: "jinkx", name: "Jinkx Monsoon", season: "S5", stats: { performance: 10, runway: 7, comedy: 10, lipsync: 8 } },
-  { id: "sasha", name: "Sasha Velour", season: "S9", stats: { performance: 9, runway: 9, comedy: 8, lipsync: 10 } },
-  { id: "trixie", name: "Trixie Mattel", season: "S7 / AS3", stats: { performance: 8, runway: 8, comedy: 9, lipsync: 7 } },
-  { id: "katya", name: "Katya", season: "S7 / AS2", stats: { performance: 8, runway: 7, comedy: 9, lipsync: 8 } },
-  { id: "alaska", name: "Alaska", season: "S5 / AS2", stats: { performance: 9, runway: 9, comedy: 9, lipsync: 8 } },
-  { id: "trinity", name: "Trinity the Tuck", season: "S9 / AS4", stats: { performance: 9, runway: 10, comedy: 8, lipsync: 9 } },
-  { id: "monet", name: "Monét X Change", season: "S10 / AS4", stats: { performance: 8, runway: 7, comedy: 9, lipsync: 9 } },
-  { id: "bob", name: "Bob the Drag Queen", season: "S8", stats: { performance: 10, runway: 7, comedy: 10, lipsync: 9 } },
-  { id: "violet", name: "Violet Chachki", season: "S7", stats: { performance: 8, runway: 10, comedy: 7, lipsync: 7 } },
-  { id: "peppermint", name: "Peppermint", season: "S9", stats: { performance: 8, runway: 7, comedy: 7, lipsync: 10 } },
-  { id: "shangela", name: "Shangela", season: "S2 / S3 / AS3", stats: { performance: 9, runway: 8, comedy: 8, lipsync: 9 } },
-  { id: "latrice", name: "Latrice Royale", season: "S4 / AS1 / AS4", stats: { performance: 8, runway: 7, comedy: 9, lipsync: 8 } },
-  { id: "alyssa", name: "Alyssa Edwards", season: "S5 / AS2", stats: { performance: 9, runway: 7, comedy: 8, lipsync: 10 } },
-  { id: "raja", name: "Raja", season: "S3 / AS7", stats: { performance: 9, runway: 10, comedy: 7, lipsync: 7 } },
-  { id: "yvie", name: "Yvie Oddly", season: "S11 / AS7", stats: { performance: 9, runway: 8, comedy: 8, lipsync: 9 } }
+  {
+    id: "bianca",
+    name: "Bianca Del Rio",
+    season: "S6",
+    image: "https://via.placeholder.com/200x260?text=Bianca",
+    stats: { performance: 10, runway: 8, comedy: 10, lipsync: 8 }
+  },
+  {
+    id: "jinkx",
+    name: "Jinkx Monsoon",
+    season: "S5",
+    image: "https://via.placeholder.com/200x260?text=Jinkx",
+    stats: { performance: 10, runway: 7, comedy: 10, lipsync: 8 }
+  },
+  {
+    id: "sasha",
+    name: "Sasha Velour",
+    season: "S9",
+    image: "https://via.placeholder.com/200x260?text=Sasha",
+    stats: { performance: 9, runway: 9, comedy: 8, lipsync: 10 }
+  },
+  {
+    id: "trixie",
+    name: "Trixie Mattel",
+    season: "S7 / AS3",
+    image: "https://via.placeholder.com/200x260?text=Trixie",
+    stats: { performance: 8, runway: 8, comedy: 9, lipsync: 7 }
+  },
+  {
+    id: "katya",
+    name: "Katya",
+    season: "S7 / AS2",
+    image: "https://via.placeholder.com/200x260?text=Katya",
+    stats: { performance: 8, runway: 7, comedy: 9, lipsync: 8 }
+  },
+  {
+    id: "alaska",
+    name: "Alaska",
+    season: "S5 / AS2",
+    image: "https://via.placeholder.com/200x260?text=Alaska",
+    stats: { performance: 9, runway: 9, comedy: 9, lipsync: 8 }
+  },
+  {
+    id: "trinity",
+    name: "Trinity the Tuck",
+    season: "S9 / AS4",
+    image: "https://via.placeholder.com/200x260?text=Trinity",
+    stats: { performance: 9, runway: 10, comedy: 8, lipsync: 9 }
+  },
+  {
+    id: "monet",
+    name: "Monét X Change",
+    season: "S10 / AS4",
+    image: "https://via.placeholder.com/200x260?text=Monet",
+    stats: { performance: 8, runway: 7, comedy: 9, lipsync: 9 }
+  },
+  {
+    id: "bob",
+    name: "Bob the Drag Queen",
+    season: "S8",
+    image: "https://via.placeholder.com/200x260?text=Bob",
+    stats: { performance: 10, runway: 7, comedy: 10, lipsync: 9 }
+  },
+  {
+    id: "violet",
+    name: "Violet Chachki",
+    season: "S7",
+    image: "https://via.placeholder.com/200x260?text=Violet",
+    stats: { performance: 8, runway: 10, comedy: 7, lipsync: 7 }
+  },
+  {
+    id: "peppermint",
+    name: "Peppermint",
+    season: "S9",
+    image: "https://via.placeholder.com/200x260?text=Peppermint",
+    stats: { performance: 8, runway: 7, comedy: 7, lipsync: 10 }
+  },
+  {
+    id: "shangela",
+    name: "Shangela",
+    season: "S2 / S3 / AS3",
+    image: "https://via.placeholder.com/200x260?text=Shangela",
+    stats: { performance: 9, runway: 8, comedy: 8, lipsync: 9 }
+  },
+  {
+    id: "latrice",
+    name: "Latrice Royale",
+    season: "S4 / AS1 / AS4",
+    image: "https://via.placeholder.com/200x260?text=Latrice",
+    stats: { performance: 8, runway: 7, comedy: 9, lipsync: 8 }
+  },
+  {
+    id: "alyssa",
+    name: "Alyssa Edwards",
+    season: "S5 / AS2",
+    image: "https://via.placeholder.com/200x260?text=Alyssa",
+    stats: { performance: 9, runway: 7, comedy: 8, lipsync: 10 }
+  },
+  {
+    id: "raja",
+    name: "Raja",
+    season: "S3 / AS7",
+    image: "https://via.placeholder.com/200x260?text=Raja",
+    stats: { performance: 9, runway: 10, comedy: 7, lipsync: 7 }
+  },
+  {
+    id: "yvie",
+    name: "Yvie Oddly",
+    season: "S11 / AS7",
+    image: "https://via.placeholder.com/200x260?text=Yvie",
+    stats: { performance: 9, runway: 8, comedy: 8, lipsync: 9 }
+  }
 ];
 
 const CHALLENGES = [
@@ -30,7 +125,7 @@ const CHALLENGES = [
   { id: "girlgroup", name: "Girl Group Challenge", weights: { performance: 0.5, runway: 0.2, comedy: 0.3 } }
 ];
 
-const DRAMA_EVENTS = [
+const DRAMA_EVENTS_GENERIC = [
   "{A} rolls her eyes at {B} in the workroom and suddenly it's the Cold War.",
   "{A} and {B} get into it over mirror space. RuPaul is living.",
   "{A} calls out {B} for coasting. Untucked will be wild tonight.",
@@ -39,6 +134,14 @@ const DRAMA_EVENTS = [
   "{A} accuses {B} of stealing her look. Twitter will hear about this.",
   "The mini-challenge leaves {A} absolutely humiliated. {B} cannot stop laughing.",
   "{A} threatens to walk out but {B} drags her back for the drama."
+];
+
+const DRAMA_EVENTS_RIVALRY = [
+  "{A} and {B} reignite their rivalry in the workroom. No one is safe.",
+  "{A} snatches {B}'s wig on the runway — metaphorically. The judges gag.",
+  "{A} says she's not threatened by {B}. {B} is not amused.",
+  "Producers stir the pot and force {A} and {B} to team up. Disaster pending.",
+  "In Untucked, {A} and {B} finally scream it out. Everyone else just sips drinks."
 ];
 
 // ----------------- STATE & HELPERS -----------------
@@ -62,7 +165,7 @@ function shuffle(array) {
   return copy;
 }
 
-// ----------------- UI: RENDER QUEEN LIST -----------------
+// ----------------- UI: RENDER LIST & GALLERY -----------------
 
 function renderQueenList() {
   const listEl = $("queen-list");
@@ -96,6 +199,35 @@ function renderQueenList() {
     });
 
     listEl.appendChild(pill);
+  });
+
+  renderCastGallery();
+}
+
+function renderCastGallery() {
+  const gallery = $("cast-gallery");
+  gallery.innerHTML = "";
+  const cast = ALL_QUEENS.filter(q => selectedQueenIds.has(q.id));
+  cast.forEach(q => {
+    const card = document.createElement("div");
+    card.className = "queen-card";
+
+    if (q.image) {
+      const img = document.createElement("img");
+      img.src = q.image;
+      img.alt = q.name;
+      card.appendChild(img);
+    }
+
+    const name = document.createElement("strong");
+    name.textContent = q.name;
+    card.appendChild(name);
+
+    const season = document.createElement("span");
+    season.textContent = q.season;
+    card.appendChild(season);
+
+    gallery.appendChild(card);
   });
 }
 
@@ -135,6 +267,7 @@ function simulateSeason() {
   const rawEpisodeCount = Number($("episode-count").value) || 8;
   const seasonNameInput = $("season-name").value.trim();
   const seasonName = seasonNameInput || "Untitled Fantasy Season";
+  const format = $("format").value; // "regular" | "allstars" | "goldenbeaver"
 
   const cast = ALL_QUEENS.filter(q => selectedQueenIds.has(q.id));
   if (cast.length < 4) {
@@ -149,19 +282,38 @@ function simulateSeason() {
   const queens = cast.map(q => ({
     ...q,
     eliminated: false,
-    track: []
+    track: [],
+    rivals: []
   }));
 
   function aliveQueens() {
     return queens.filter(q => !q.eliminated);
   }
 
+  // Rivalries
+  const rivalries = createRivalries(queens);
+  // Golden Beaver holder (for that format)
+  let goldenBeaverHolder = null;
+
   // Season header
   const header = document.createElement("div");
   header.className = "log-block season-header";
+
+  const rivalsText = rivalries.length
+    ? rivalries.map(r => `${r.a.name} vs ${r.b.name}`).join(" · ")
+    : "None yet… but just wait.";
+
+  const formatLabel = format === "regular"
+    ? "Regular Season"
+    : format === "allstars"
+      ? "All Stars (Top 2 Legacy)"
+      : "Golden Beaver (Canada-style All Stars)";
+
   header.innerHTML = `
     <h3>${seasonName}</h3>
+    <p><strong>Format:</strong> ${formatLabel}</p>
     <p><strong>Cast:</strong> ${queens.map(q => q.name).join(", ")}</p>
+    <p><strong>Rivalries:</strong> ${rivalsText}</p>
     <p><strong>Chaos level:</strong> ${chaosLevel}</p>
   `;
   logEl.appendChild(header);
@@ -180,59 +332,152 @@ function simulateSeason() {
       queen: q,
       score: challengeScore(q, challenge.weights, chaosLevel)
     }));
-
     scored.sort((a, b) => b.score - a.score);
 
-    const winner = scored[0].queen;
-    const high = scored.slice(1, Math.min(3, scored.length - 2)).map(s => s.queen);
+    const topQueen = scored[0].queen;
+    const top2 = scored.slice(0, Math.min(2, scored.length)).map(s => s.queen);
+    const bottomGroup = scored.slice(-Math.min(3, scored.length)).map(s => s.queen);
 
+    // Placements depend on format
+    let winner = topQueen;
+    let high = [];
     let low = [];
     let bottom2 = [];
-    if (living.length >= 7) {
-      bottom2 = scored.slice(-2).map(s => s.queen);
-      low = scored.slice(-4, -2).map(s => s.queen);
-    } else if (living.length === 6 || living.length === 5 || living.length === 4) {
-      bottom2 = scored.slice(-2).map(s => s.queen);
-      low = scored.slice(-3, -2).map(s => s.queen);
+    let safe = [];
+    let lipsyncStory = "";
+    let eliminated = null;
+    let twistStory = "";
+
+    if (format === "regular") {
+      // Classic: top winner, bottom 2 lip sync
+      winner = topQueen;
+      high = scored.slice(1, Math.min(3, scored.length - 2)).map(s => s.queen);
+
+      if (living.length >= 7) {
+        bottom2 = scored.slice(-2).map(s => s.queen);
+        low = scored.slice(-4, -2).map(s => s.queen);
+      } else {
+        bottom2 = scored.slice(-2).map(s => s.queen);
+        low = scored.slice(-3, -2).map(s => s.queen);
+      }
+
+      safe = living.filter(
+        q => q !== winner &&
+          !high.includes(q) &&
+          !low.includes(q) &&
+          !bottom2.includes(q)
+      );
+
+      winner.track.push("WIN");
+      high.forEach(q => q.track.push("HIGH"));
+      safe.forEach(q => q.track.push("SAFE"));
+      low.forEach(q => q.track.push("LOW"));
+      bottom2.forEach(q => q.track.push("BTM"));
+
+      const lip = lipsyncForYourLife(bottom2, chaosLevel);
+      eliminated = lip.eliminated;
+      lipsyncStory = lip.lipsyncStory;
+
+      if (eliminated) {
+        eliminated.eliminated = true;
+        eliminated.track.push("ELIM");
+      }
+    } else {
+      // ALL STARS / GOLDEN BEAVER FORMAT
+      const bottomCandidates = bottomGroup;
+
+      // Track record codes
+      top2.forEach(q => q.track.push("TOP2"));
+      const notTop = living.filter(q => !top2.includes(q) && !bottomCandidates.includes(q));
+      notTop.forEach(q => q.track.push("SAFE"));
+      bottomCandidates.forEach(q => q.track.push("BTM"));
+
+      // Golden Beaver twist: top scoring queen gets a beaver this week
+      let savedByBeaver = null;
+      let beaverHolderThisWeek = null;
+
+      if (format === "goldenbeaver") {
+        beaverHolderThisWeek = topQueen;
+        goldenBeaverHolder = topQueen; // store for log
+        const bottomNonRivals = bottomCandidates.filter(b =>
+          !topQueen.rivals.includes(b.id)
+        );
+        const possibleSaves = bottomNonRivals.length ? bottomNonRivals : bottomCandidates;
+
+        if (possibleSaves.length > 1 && Math.random() < (0.5 + chaosLevel * 0.1)) {
+          savedByBeaver = sample(possibleSaves);
+          // Remove from elimination pool
+        }
+      }
+
+      let eliminationPool = bottomCandidates.slice();
+      if (savedByBeaver) {
+        eliminationPool = eliminationPool.filter(q => q !== savedByBeaver);
+        twistStory = `${beaverHolderThisWeek.name} uses the Golden Beaver to save ${savedByBeaver.name from elimination}.`;
+      }
+
+      // Lip sync for legacy: between top 2 only
+      const legacy = lipsyncForLegacy(top2, chaosLevel);
+      const lsWinner = legacy.winner;
+      lipsyncStory = legacy.story;
+
+      // If no one left in elim pool (everyone saved) – gag, no elimination
+      if (!eliminationPool.length || Math.random() < (0.1 + chaosLevel * 0.05)) {
+        eliminated = null;
+        twistStory = twistStory
+          ? twistStory + " Double shantay! No one leaves."
+          : "Double shantay! The lipstick stays in the pocket.";
+      } else {
+        // LS winner sends someone home from eliminationPool
+        eliminated = chooseElimination(lsWinner, eliminationPool, scored, chaosLevel, rivalries);
+        eliminated.eliminated = true;
+        eliminated.track.push("ELIM");
+      }
+
+      winner = lsWinner; // treat LS winner as "episode winner" for titles
+      bottom2 = eliminationPool.slice(0, 2);
+      low = bottomCandidates.filter(q => !bottom2.includes(q) && q !== savedByBeaver);
+      safe = living.filter(
+        q => !top2.includes(q) &&
+          !bottomCandidates.includes(q)
+      );
     }
 
-    const safe = living.filter(
-      q => q !== winner && !high.includes(q) && !low.includes(q) && !bottom2.includes(q)
-    );
-
-    // Track records
-    winner.track.push("WIN");
-    high.forEach(q => q.track.push("HIGH"));
-    safe.forEach(q => q.track.push("SAFE"));
-    low.forEach(q => q.track.push("LOW"));
-    bottom2.forEach(q => q.track.push("BTM"));
-
-    // Lip sync
-    const { eliminated, lipsyncStory } = lipsyncForYourLife(bottom2, chaosLevel);
-
-    if (eliminated) {
-      eliminated.eliminated = true;
-      eliminated.track.push("ELIM");
-    }
-
-    // Drama
-    const dramaStory = maybeDramaEvent(aliveQueens(), chaosLevel);
+    const dramaStory = maybeDramaEvent(aliveQueens(), chaosLevel, rivalries);
 
     epiBlock.innerHTML = `
       <h3>Episode ${episodeNumber}: ${challenge.name}</h3>
       <p><strong>Winner:</strong> ${winner.name}</p>
-      <p><strong>High:</strong> ${high.length ? high.map(q => q.name).join(", ") : "—"}</p>
+      <p><strong>High/Top:</strong> ${
+        format === "regular"
+          ? (high.length ? high.map(q => q.name).join(", ") : "—")
+          : top2.map(q => q.name).join(", ")
+      }</p>
       <p><strong>Safe:</strong> ${safe.length ? safe.map(q => q.name).join(", ") : "—"}</p>
       <p><strong>Low:</strong> ${low.length ? low.map(q => q.name).join(", ") : "—"}</p>
-      <p><strong>Bottom 2:</strong> ${bottom2.length ? bottom2.map(q => q.name).join(", ") : "—"}</p>
+      <p><strong>Bottom group:</strong> ${
+        bottomGroup.length ? bottomGroup.map(q => q.name).join(", ") : "—"
+      }</p>
       <div class="log-row">
         <span class="badge win">Lip Sync</span>
         <span class="badge">${lipsyncStory}</span>
       </div>
-      ${dramaStory ? `<div class="log-row" style="margin-top:6px;">
-        <span class="badge drama">Drama</span>
-        <span class="badge">${dramaStory}</span>
-      </div>` : ""}
+      ${
+        twistStory
+          ? `<div class="log-row" style="margin-top:6px;">
+               <span class="badge twist">Twist</span>
+               <span class="badge">${twistStory}</span>
+             </div>`
+          : ""
+      }
+      ${
+        dramaStory
+          ? `<div class="log-row" style="margin-top:6px;">
+               <span class="badge drama">Drama</span>
+               <span class="badge">${dramaStory}</span>
+             </div>`
+          : ""
+      }
       <p style="margin-top:6px; font-size:0.8rem; color:var(--text-muted);">
         Queens remaining: ${aliveQueens().map(q => q.name).join(", ")}
       </p>
@@ -276,7 +521,7 @@ function simulateSeason() {
     logEl.appendChild(finaleBlock);
   }
 
-  // Track records summary
+  // Track records summary (paragraphs)
   const summary = document.createElement("div");
   summary.className = "log-block";
   const rows = queens
@@ -286,13 +531,23 @@ function simulateSeason() {
     )
     .join("");
   summary.innerHTML = `
-    <h3>Track Records</h3>
+    <h3>Track Records (Summary)</h3>
     ${rows}
   `;
   logEl.appendChild(summary);
 
+  // Track record table (matrix)
+  const tableBlock = document.createElement("div");
+  tableBlock.className = "log-block";
+  tableBlock.innerHTML = `<h3>Track Record Table</h3>`;
+  const table = buildTrackRecordTable(queens);
+  tableBlock.appendChild(table);
+  logEl.appendChild(tableBlock);
+
   logEl.scrollTop = logEl.scrollHeight;
 }
+
+// ----------- EPISODE UTILS -----------
 
 function challengeScore(queen, weights, chaosLevel) {
   const s = queen.stats;
@@ -301,7 +556,6 @@ function challengeScore(queen, weights, chaosLevel) {
     s.runway * (weights.runway ?? 0.33) +
     s.comedy * (weights.comedy ?? 0.33);
 
-  // Chaos modifies randomness amplitude
   const chaosAmp = [0.8, 1.6, 2.6, 3.6][chaosLevel] || 1.6;
   const noise = (Math.random() * 2 - 1) * chaosAmp;
   return base + noise;
@@ -319,7 +573,6 @@ function lipsyncForYourLife(bottom2, chaosLevel) {
 
   const diff = Math.abs(scoreA - scoreB);
 
-  // Chance of double shantay
   if (diff < 0.75 && Math.random() < 0.25 + chaosLevel * 0.05) {
     return {
       eliminated: null,
@@ -327,24 +580,100 @@ function lipsyncForYourLife(bottom2, chaosLevel) {
     };
   }
 
-  let eliminated, lipsyncStory;
-  if (scoreA < scoreB) {
-    eliminated = a;
-  } else {
-    eliminated = b;
-  }
-
-  lipsyncStory = `${a.name} (${scoreA.toFixed(2)}) vs ${b.name} (${scoreB.toFixed(
+  const eliminated = scoreA < scoreB ? a : b;
+  const story = `${a.name} (${scoreA.toFixed(2)}) vs ${b.name} (${scoreB.toFixed(
     2
-  )}) — ${eliminated.name} sashes away.`;
+  )}) — ${eliminated.name} sashays away.`;
 
-  return { eliminated, lipsyncStory };
+  return { eliminated, lipsyncStory: story };
 }
 
-function maybeDramaEvent(alive, chaosLevel) {
+function lipsyncForLegacy(top2, chaosLevel) {
+  if (!top2 || top2.length < 2) {
+    return {
+      winner: top2[0],
+      story: `${top2[0].name} wins by default.`
+    };
+  }
+  const [a, b] = top2;
+  const chaosAmp = [1.0, 1.8, 2.8, 3.8][chaosLevel] || 1.8;
+
+  const scoreA = a.stats.lipsync + (Math.random() * 2 - 1) * chaosAmp;
+  const scoreB = b.stats.lipsync + (Math.random() * 2 - 1) * chaosAmp;
+  const winner = scoreA >= scoreB ? a : b;
+
+  const story = `${a.name} (${scoreA.toFixed(2)}) vs ${b.name} (${scoreB.toFixed(
+    2
+  )}) — ${winner.name} wins the legacy lip sync.`;
+  return { winner, story };
+}
+
+function chooseElimination(lsWinner, eliminationPool, scored, chaosLevel, rivalries) {
+  if (eliminationPool.length === 1) {
+    return eliminationPool[0];
+  }
+
+  const isRival = q => rivalries.some(r =>
+    (r.a.id === lsWinner.id && r.b.id === q.id) ||
+    (r.b.id === lsWinner.id && r.a.id === q.id)
+  );
+
+  const poolScores = new Map();
+  scored.forEach(s => {
+    if (eliminationPool.includes(s.queen)) {
+      poolScores.set(s.queen.id, s.score);
+    }
+  });
+
+  let candidates = eliminationPool.slice();
+
+  // Sometimes they'll target their rival
+  if (candidates.some(isRival) && Math.random() < (0.4 + chaosLevel * 0.1)) {
+    candidates = candidates.filter(isRival);
+  } else {
+    // Otherwise, lean towards worst score
+    candidates.sort((a, b) => (poolScores.get(a.id) || 0) - (poolScores.get(b.id) || 0));
+  }
+
+  // Add extra chaos
+  if (Math.random() < chaosLevel * 0.15) {
+    return sample(eliminationPool);
+  }
+
+  return candidates[0];
+}
+
+// ----------- RIVALRIES & DRAMA -----------
+
+function createRivalries(queens) {
+  const pairs = [];
+  const shuffled = shuffle(queens);
+  const numPairs = Math.min(3, Math.floor(shuffled.length / 3));
+
+  for (let i = 0; i < numPairs * 2 && shuffled.length >= 2; i += 2) {
+    const a = shuffled[i];
+    const b = shuffled[i + 1];
+    if (!a || !b) break;
+    if (a.id === b.id) continue;
+    pairs.push({ a, b });
+    a.rivals.push(b.id);
+    b.rivals.push(a.id);
+  }
+
+  return pairs;
+}
+
+function maybeDramaEvent(alive, chaosLevel, rivalries) {
   if (alive.length < 2) return "";
-  const baseChance = 0.25 + chaosLevel * 0.15; // more chaos = more drama
+  const baseChance = 0.25 + chaosLevel * 0.15;
   if (Math.random() > baseChance) return "";
+
+  const useRivalry = rivalries.length && Math.random() < 0.55;
+  if (useRivalry) {
+    const r = sample(rivalries);
+    const template = sample(DRAMA_EVENTS_RIVALRY);
+    return template.replace("{A}", r.a.name).replace("{B}", r.b.name);
+  }
 
   const a = sample(alive);
   let b = sample(alive);
@@ -354,9 +683,11 @@ function maybeDramaEvent(alive, chaosLevel) {
     guard++;
   }
 
-  const template = sample(DRAMA_EVENTS);
+  const template = sample(DRAMA_EVENTS_GENERIC);
   return template.replace("{A}", a.name).replace("{B}", b.name);
 }
+
+// ----------- FINALE & TRACK TABLE -----------
 
 function simulateFinale(finalists, chaosLevel) {
   const chaosAmp = [0.8, 1.4, 2.2, 3.0][chaosLevel] || 1.4;
@@ -370,10 +701,53 @@ function simulateFinale(finalists, chaosLevel) {
   return results;
 }
 
+function buildTrackRecordTable(queens) {
+  const table = document.createElement("table");
+  table.className = "track-table";
+
+  const maxLen = Math.max(...queens.map(q => q.track.length));
+  const thead = document.createElement("thead");
+  const headRow = document.createElement("tr");
+
+  const thName = document.createElement("th");
+  thName.textContent = "Queen";
+  headRow.appendChild(thName);
+
+  for (let i = 0; i < maxLen; i++) {
+    const th = document.createElement("th");
+    if (i < maxLen - 1) {
+      th.textContent = `Ep ${i + 1}`;
+    } else {
+      th.textContent = "Finale / Result";
+    }
+    headRow.appendChild(th);
+  }
+  thead.appendChild(headRow);
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+  queens.forEach(q => {
+    const tr = document.createElement("tr");
+    const tdName = document.createElement("td");
+    tdName.className = "name";
+    tdName.textContent = q.name;
+    tr.appendChild(tdName);
+
+    for (let i = 0; i < maxLen; i++) {
+      const td = document.createElement("td");
+      td.textContent = q.track[i] || "";
+      tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+  });
+  table.appendChild(tbody);
+
+  return table;
+}
+
 // ----------------- INIT -----------------
 
 function init() {
-  // Default preset
   applyPreset("classic");
 
   $("cast-preset").addEventListener("change", (e) => {
@@ -384,3 +758,4 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
