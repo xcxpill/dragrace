@@ -20,6 +20,7 @@
     <main class="app-main">
       <section class="panel config-panel">
         <h2>Season Setup</h2>
+
         <label class="field">
           <span>Season Name</span>
           <input id="season-name" type="text" placeholder="e.g. All Stars: Chaos Edition" />
@@ -28,6 +29,15 @@
         <label class="field">
           <span>Episodes (before finale)</span>
           <input id="episode-count" type="number" min="4" max="14" value="8" />
+        </label>
+
+        <label class="field">
+          <span>Format</span>
+          <select id="format">
+            <option value="regular">Regular Season</option>
+            <option value="allstars">All Stars (Top 2 Legacy)</option>
+            <option value="goldenbeaver">Golden Beaver (Canada-style)</option>
+          </select>
         </label>
 
         <label class="field">
@@ -40,8 +50,13 @@
         </label>
 
         <div class="field">
-          <span>Cast (you can toggle queens)</span>
+          <span>Cast (toggle queens)</span>
           <div id="queen-list" class="queen-list"></div>
+        </div>
+
+        <div class="field">
+          <span>Cast Gallery (promo cards)</span>
+          <div id="cast-gallery" class="cast-gallery"></div>
         </div>
 
         <details class="field">
@@ -51,7 +66,7 @@
             <input id="chaos" type="range" min="0" max="3" step="1" value="1" />
           </label>
           <p class="hint">
-            0 = predictable, 3 = pure nonsense.
+            0 = predictable, 3 = pure nonsense (wild eliminations, drama every episode).
           </p>
         </details>
       </section>
