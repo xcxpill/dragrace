@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Drag Race Web Simulator 👑</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div>
+        <h1>Drag Race Web Simulator 👑</h1>
+        <p>Create chaotic fantasy seasons with RuPaul's Drag Race queens.</p>
+      </div>
+      <button id="simulate-btn" class="primary-btn">Simulate Season</button>
+    </header>
+
+    <main class="app-main">
+      <section class="panel config-panel">
+        <h2>Season Setup</h2>
+        <label class="field">
+          <span>Season Name</span>
+          <input id="season-name" type="text" placeholder="e.g. All Stars: Chaos Edition" />
+        </label>
+
+        <label class="field">
+          <span>Episodes (before finale)</span>
+          <input id="episode-count" type="number" min="4" max="14" value="8" />
+        </label>
+
+        <label class="field">
+          <span>Cast Preset</span>
+          <select id="cast-preset">
+            <option value="classic">Classic Queens</option>
+            <option value="allstars">All Stars Legends</option>
+            <option value="random12">Random 12 Queens</option>
+          </select>
+        </label>
+
+        <div class="field">
+          <span>Cast (you can toggle queens)</span>
+          <div id="queen-list" class="queen-list"></div>
+        </div>
+
+        <details class="field">
+          <summary>Advanced Settings</summary>
+          <label class="subfield">
+            <span>Chaos Level</span>
+            <input id="chaos" type="range" min="0" max="3" step="1" value="1" />
+          </label>
+          <p class="hint">
+            0 = predictable, 3 = pure nonsense.
+          </p>
+        </details>
+      </section>
+
+      <section class="panel log-panel">
+        <h2>Season Story</h2>
+        <div id="log" class="log"></div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <span>Built for fun fan simulations · Not affiliated with RuPaul’s Drag Race</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
